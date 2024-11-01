@@ -32,10 +32,10 @@ def is_english(text):
 
 def speak(text, voice_id=None):
     # Determine the language of the text
-    if is_korean(text):
-        voice_id = korean_voice_id
-    elif is_english(text):
+    if is_english(text):
         voice_id = english_voice_id
+    elif is_korean(text):
+        voice_id = korean_voice_id
     else:
         voice_id = japanese_voice_id
 
